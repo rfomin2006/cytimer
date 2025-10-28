@@ -1,15 +1,15 @@
-from setuptools import setup
+from setuptools import setup, Extension
 from Cython.Build import cythonize
 
 setup(
     name="cytimer",
     version="0.1.0",
-    author="rfomi",
+    author="rfomi", 
     author_email="rfomin2805@gmail.com",
     license="MIT",
-    requires="cython>=3.1",
+    setup_requires=["cython>=3.1"],
     ext_modules=cythonize(
-        "src/core.pyx",
+        Extension("cytimer", ["src/core.pyx"]),
         compiler_directives={"language_level": "3"}
     ),
     zip_safe=False,
