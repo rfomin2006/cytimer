@@ -26,6 +26,11 @@ print(f"Result: {result}, Time: {exec_time:.6f} seconds")
 > [!NOTE]  
 > Uses processor clock ticks for timing, which provides high precision but may not account for time spent in sleep or I/O operations.
 
+## Installation:
+1. Clone this repository
+2. `cd cytimer`
+3. `pip install .`
+
 ---
 
 ### Version: 0.1.0
