@@ -7,6 +7,7 @@ setup(
     author="rfomi",
     author_email="rfomin2805@gmail.com",
     license="MIT",
+    requires="cython>=3.1"
     ext_modules=cythonize(
         "src/core.pyx",
         compiler_directives={"language_level": "3"}
