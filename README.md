@@ -9,6 +9,8 @@ the execution time of decorated functions alongside their results.
 ## Example:
 
 ```python
+from cytimer import timer
+
 @timer
 def expensive_operation(n):
   return sum(i * i for i in range(n))
